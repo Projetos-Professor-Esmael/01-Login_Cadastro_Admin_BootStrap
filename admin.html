@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Página Administrativa</title>
+</head>
+<body>
+    <nav>
+        <button id="logout" class="btn btn-danger">Logout</button>
+    </nav>
+    <div class="container">  <!-- Conteúdo da página vai aqui -->
+        <div class="container mt-5">
+            <h2>Painel Administrativo</h2>
+            <!-- Aqui você pode adicionar funcionalidades para postar conteúdo -->
+        </div>
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+       
+
+        <script>
+        document.getElementById('logout').addEventListener('click', function() {
+            // Aqui você pode fazer uma requisição para o endpoint de logout se necessário.
+            localStorage.removeItem('token'); // Remove o token do armazenamento local
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        });
+        </script>
+    </script>
+   
+</body>
+</html>

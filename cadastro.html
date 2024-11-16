@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <nav>
+        <button id="logout" class="btn btn-danger">Logout</button>
+    </nav>
+    <div class="container"> <!-- Conteúdo da página vai aqui -->
+        <div class="container mt-5">
+            <h2>Criar Conta</h2>
+            <form> <!-- Campos para cadastro -->
+                <div class="form-group">
+                    <label for="newUsername">Usuário:</label>
+                    <input type="text" class="form-control" id="newUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Senha:</label>
+                    <input type="password" class="form-control" id="newPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+    document.getElementById('logout').addEventListener('click', function() {
+    localStorage.removeItem('token'); // Remove o token do armazenamento local
+    window.location.href = 'login.html'; // Redireciona para a página de login
+    });
+    </script>
+    </script>
+   
+</body>
+</html>
+
